@@ -38,13 +38,8 @@ namespace WindowsFormsApp1
                 QRCode qrCode = new QRCode(qrCodeData);
                 Bitmap qrCodeImage = qrCode.GetGraphic(10);
 
-
-
                 Base64QRCode qrCode2 = new Base64QRCode(qrCodeData);
                 string qrCodeImageAsBase64 = qrCode2.GetGraphic(10);
-
-
-
 
                 stringBox.Text = qrCodeImageAsBase64.ToString().Trim();
                 picBarcode.Image = qrCodeImage;
